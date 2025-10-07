@@ -1,47 +1,64 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  import Header from "./components/Header.svelte";
+  import Footer from "./components/Footer.svelte";
+  import { wrap } from "svelte-spa-router/wrap";
+  import Router from "svelte-spa-router";
+
+  // Import delle pagine
+  import Home from "./routes/Home.svelte";
+  import About from "./routes/About.svelte";
+  import Contact from "./routes/Contact.svelte";
+
+  // Mappa delle route
+  const routes = {
+    "/": wrap({ component: Home }),
+    "/about": wrap({ component: About }),
+    "/contact": wrap({ component: Contact })
+  };
 </script>
 
-<main>
-  <div>
-    <a href="https://vite.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
+<div class="app">
+  <Header />
 
-  <div class="card">
-    <Counter />
-  </div>
+  <main>
+    <Router {routes} />
+  </main>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-</main>
+  <Footer />
+</div>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+  :global(html, body) {
+    margin: 0;
+    padding: 0;
+	  box-sizing: border-box;
+  max-width: none;   /* niente sbordi */
+    width: 100%;
+  font-family: 'Poppins', sans-serif; /* usa Poppins */
+    background: #fff;
+    color: #111;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  .app {
+    width: 100%;
+    max-width: none;   /* si adatta esattamente alla viewport */
+    margin: 0 auto;     /* centra tutto se max-width < 100% */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra i contenuti orizzontalmente */
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: none;   /* opzionale: limite desktop */
+    padding: 2rem 1vw;  /* padding relativo, non fisso */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .read-the-docs {
-    color: #888;
-  }
+  
 </style>
+
