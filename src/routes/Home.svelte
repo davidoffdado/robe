@@ -24,8 +24,14 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
     justify-content: center; /* la griglia è sempre centrata */
+	margin-top: 0rem;
   }
-
+  
+  @media (max-width: 640px) {
+  .projects {
+    margin-top: 4rem; /* aumenta la distanza su mobile */
+  }
+}
 
 
 </style>
