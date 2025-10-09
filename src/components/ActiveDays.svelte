@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
 
-  const startDate = new Date("2024-10-01");
+  const startDate = new Date("2025-10-01");
 
   let currentDate = new Date();
   let totalDays = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24)) + 1;

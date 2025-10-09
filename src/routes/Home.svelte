@@ -3,7 +3,7 @@
   import sample from "../assets/sample.png";
 
   let projects = [
-    { title: "Analisi elezioni 2025", subtitle: "Un progetto interattivo sui dati elettorali", image: sample, date: "Gen 2025" },
+    { title: "Analisi elezioni 2025", subtitle: "Un progetto interattivo sui dati elettorali", image: sample, date: "Gen 2025", link: "https://davidoffdado.github.io/pizza/"},
     { title: "Clima e città", subtitle: "Come le città stanno cambiando con il clima", image: sample, date: "Dic 2024" },
     { title: "Musica e dati", subtitle: "Visualizzazioni divertenti sui trend musicali", image: sample, date: "Nov 2024" },
     { title: "Cinema e numeri", subtitle: "Analisi dei dati al botteghino", image: sample, date: "Ott 2024" },

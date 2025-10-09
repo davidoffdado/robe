@@ -1,7 +1,7 @@
 <section class="contact">
   <h2>Contatti</h2>
   <p>
-    Vuoi collaborare o proporre un progetto? Ecco come puoi raggiungermi:
+    Vuoi collaborare o proporre un'idea? Ecco come puoi raggiungerci:
   </p>
 
   <ul class="contact-list">
@@ -24,7 +24,7 @@
   .contact {
     max-width: 600px;
     margin: auto;
-    text-align: center;
+    text-align: left;
     line-height: 1.6;
   }
 

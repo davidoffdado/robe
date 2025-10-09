@@ -24,31 +24,16 @@
 
 <style>
   :global(html, body) {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     background: #fff;
     color: #111;
-
     overflow-y: scroll; /* evita micro-movimenti tra pagine corte/lunghe */
-
   }
 
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 8rem 5vw 3rem; /* spazio per l’header */
-  }
-
+ <!-- main {
+  padding: 8rem 5vw 3rem;
+  } -->
+  
 @media (max-width: 640px) {
   main {
     padding-top: 1rem; /* oppure 11rem/12rem, dipende dall’altezza del tuo header */

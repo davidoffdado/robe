@@ -4,6 +4,8 @@
     export let subtitle;   // sottotitolo al posto della descrizione
   export let image;
   export let date;
+    export let link; // nuovo: URL della pagina o risorsa da aprire
+
 
   // Palette di colori vivaci (sequenza per evitare doppioni vicini)
   const colors = [
@@ -26,7 +28,7 @@
 
 
 
-<div class="card">
+<a class="card" href={link}>
   <div class="top-bar">
     <span class="tag">#{index}</span>
     <span class="date">{date}</span>
@@ -40,7 +42,7 @@
     {#if subtitle}
     <h3 class="subtitle">{subtitle}</h3>
   {/if}
-</div>
+</a>
 
 <style>
   .card {
