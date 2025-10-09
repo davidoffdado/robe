@@ -49,8 +49,10 @@
     padding: 8rem 5vw 3rem; /* spazio per l’header */
   }
 
-
-  
-
+@media (max-width: 640px) {
+  main {
+    padding-top: 1rem; /* oppure 11rem/12rem, dipende dall’altezza del tuo header */
+  }
+}
 
 </style>
