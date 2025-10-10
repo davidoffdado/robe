@@ -6,11 +6,14 @@
   import Home from "./routes/Home.svelte";
   import About from "./routes/About.svelte";
   import Contact from "./routes/Contact.svelte";
+  import Seguici from "./routes/Seguici.svelte";
+  
 
   const routes = {
     "/": wrap({ component: Home }),
     "/about": wrap({ component: About }),
-    "/contact": wrap({ component: Contact })
+    "/contact": wrap({ component: Contact }),
+	"/seguici": wrap({ component: Seguici })
   };
 </script>
 

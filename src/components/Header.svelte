@@ -34,7 +34,8 @@
   <button class="close-btn" on:click={() => menuOpen = false}>×</button>
   <ul>
     <li><a href="/about" use:link on:click={() => menuOpen = false}>ABOUT</a></li>
-    <li><a href="/contact" use:link on:click={() => menuOpen = false}>CONTACT</a></li>
+    <li><a href="/contact" use:link on:click={() => menuOpen = false}>CONTACTS</a></li>
+	<li><a href="/seguici" use:link on:click={() => menuOpen = false}>FOLLOW US</a></li>
   </ul>
 </div>
 
