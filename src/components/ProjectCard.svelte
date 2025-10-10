@@ -38,7 +38,7 @@
     <img src={image} alt={title} />
   </div>
 
-  <h2>{title}</h2>
+  <h2 class="title" style="--highlight:{bgColor};">{title}</h2>
     {#if subtitle}
     <h3 class="subtitle">{subtitle}</h3>
   {/if}
@@ -112,15 +112,47 @@
     color: #444;
   }
   
-    .subtitle {
-    margin: 0.25rem 0 0;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #555;
-    text-align: left;   /* allineato a sinistra */
+ .title {
+    position: relative;
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    display: inline-block; /* così il background si adatta al testo */
   }
-  
+
+  /* Evidenziazione in hover */
+  .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.15em;
+    width: 100%;
+    height: 0.5em;
+    background: var(--highlight);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .title::before {
+    transform: scaleX(1); /* si anima l’evidenziatore */
+  }
+
+  .subtitle {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.4;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+  }
 
   
-  
+ 
 </style>

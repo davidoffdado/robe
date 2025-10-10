@@ -3,8 +3,8 @@
   <details>
     <summary><h2>What</h2></summary>
     <p>
-      Il progetto ospita idee di <b>data journalism</b>, trasformandole in storie interattive e visuali,
-      con l’obiettivo di smontare la retorica della noia dietro i numeri e di fornire un'informazione più coinvolgente.
+      Il progetto ospita idee di <b>data journalism</b> e <b>visual journalism</b>, trasformandole in storie interattive,
+      con l’obiettivo di smontare la retorica dei numeri noiosi e di fornire un'informazione più coinvolgente.
     </p>
   </details>
  

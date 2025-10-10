@@ -19,8 +19,7 @@
     <summary><h2>Commissioni</h2></summary>
     <p>
     Vuoi raccontare <b>i tuoi dati</b> in modo originale e interattivo?  
-    Realizziamo progetti di data journalism, visualizzazioni e storie su misura  
-    per aziende, enti e redazioni.
+    Possiamo lavorarci.
     </p>
   </details>
   
